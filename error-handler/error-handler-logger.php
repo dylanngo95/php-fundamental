@@ -63,7 +63,7 @@ echo "Start Index<br/>";
 try {
     echo $var;
     $array = ['1' => 1, '2' => 2];
-    $array['3'];
+    $array['3']['5'];
 
 //    $dylan = new Dylan();
 //    @dylan();
@@ -73,10 +73,10 @@ try {
 
     $temp = 0;
 
-    throw new \Exception("Good exception men", 33);
+//    throw new \Exception("Good exception men", 33);
 
 } catch (Error $ex) {
-    echo "We catch a exception: " . $ex->getMessage() . PHP_EOL;
+    echo "We catch a error: " . $ex->getMessage() . PHP_EOL;
 } catch (Exception $ex) {
     echo "We catch a exception: " . $ex->getMessage() . PHP_EOL;
 } catch (Throwable $ex) {
